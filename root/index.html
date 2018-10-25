@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Admin</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <script src="web3.js"></script>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="app.js"></script>
+  <script src="sol.js"></script>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body >
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-md-lg-12 ">
+        <div class="projectName">DAPPBANK.IO</div>
+        <div class="projectName">ADMIN</div>
+      </div>
+    </div>
+
+    <div class="menu">
+        <p class="btn" id="f1">Set Price</p>
+        <div class="cnt" id="g1">
+          ETH Price: <input id="_e" />
+          <br>
+          exchange ETH-ABR: <input id="_ex" />
+          <br>
+          <button onclick="_setprice()">Set Price</button>
+          <div class="cancel" >x</div>
+        </div>
+        <p class="btn" id="f2">Set Daily</p>
+        <div class="cnt" id="g2">
+          %profit: <input id="_daily" />
+          <br>
+          <button onclick="_setdaily()">Set Daily</button>
+          <div class="cancel">x</div>
+        </div>
+        <p class="btn" id="f3">Set COE</p>
+        <div class="cnt" id="g3">
+          %Capital: <input id="_coe" />
+          <br>
+          <button onclick="_setcoe()">Set COE</button>
+          <div class="cancel">x</div>
+        </div>
+        <p class="btn" id="f4">Withdraw</p>
+        <div class="cnt" id="g4">
+          <button onclick="_Withdraw()">Withdraw</button>
+          <br>
+          <div class="cancel">x</div>
+        </div>
+    </div>
+
+  </div>
+  <style>
+    body {
+        background-color: #1C1C1C;
+    }
+    </style>
+</body>
+</html>
+
