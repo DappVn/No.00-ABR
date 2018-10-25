@@ -1,0 +1,157 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>ABRI | Digital Banking</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link href="bootstrap.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+<section class="content">
+	<div id="particles-js">
+  <canvas class="particles-js-canvas-el" width="auto" height="auto" style="width: 100%; height: 100%;"></canvas>
+  </div>
+  <!--start-->
+  <div class="position-center-center">
+	<div class="container text-center">
+		<a href="#">  <img alt="" class="img-responsive" src="logo.png" width = "40%">  </a>
+	</br>
+	<div class="col-md-12">
+		<div class="projectName" align="center">DAPPBANK.IO</div>
+    </div>	
+	<div class="col-md-12">
+		<div class="slogan">Banking 4.0 On The Blockchain</div>
+    </div>
+	</br>	
+	<div class = "row">
+		<div class="col-md-6">
+			<p class="btn">Register</p>
+			<div class="cnt" id="g1">
+				<label for="_mail">Email:</label>
+				 <input id="_mail" />
+				<p></p>
+				<label for="_mobile">Phone:</label> <input  id="_mobile" />
+				<p></p>
+				<label for="_nickname">User Name:</label> <input  id="_nickname" />
+				<p></p>
+				<button onclick="_setinfo()">Registry</button>
+				<div class="cancel" >x</div>
+        </div>
+				
+		</div>
+		<div class="col-md-6">
+			<p class="btn">&nbsp;&nbsp;&nbsp;&nbsp;Claim&nbsp;&nbsp;&nbsp;&nbsp;</p>
+			<div class="cnt" id="g5">
+				<button onclick="_clam()">&nbsp;&nbsp;&nbsp;&nbsp;Claim&nbsp;&nbsp;&nbsp;&nbsp;</button>
+				<div class="cancel" >x</div>
+			</div>
+	
+		</div>
+	</div>
+	<div class = "row">
+		<div class="col-md-6">
+			<p class="btn">Deposit</p>
+			<div class="cnt" id="g2">
+				ABR: <input  id="_a" />
+				<button onclick="_aDeposit()">&nbsp;&nbsp;&nbsp;Deposit&nbsp;&nbsp;&nbsp;</button>
+				<p></p>
+				ETH / ABR: <input  id="_s" />
+				<button onclick="_swap()">Swap</button>
+				<div class="cancel">x</div>
+			</div>				
+		</div>
+		<div class="col-md-6">
+			<p class="btn">Withdraw</p>
+			<div class="cnt" id="g6">
+				Profit: <input  id="_i" />
+				<button onclick="_iwithdrawal()">Withdraw</button>
+				<p></p>
+				Capital: <input  id="_f" />
+				<button onclick="_fwithdrawal()">Withdraw</button>
+				<div class="cancel">x</div>
+        </div>
+	
+		</div>
+	</div>
+	<div class = "row">
+		<div class="col-md-6">
+			<p class="btn">Referral</p>
+			<div class="cnt" id="g3">
+				Your ETH Address: <input value="0x87d444754Caf4941E32361BB797F07dEddA59396"  id="_referral" />
+				<button onclick="_referral()">Add</button>
+				<div class="cancel">x</div>
+				</div>				
+		</div>
+		<div class="col-md-6">
+			<p class="btn">&nbsp;&nbsp;&nbsp;&nbsp;View&nbsp;&nbsp;&nbsp;&nbsp;</p>
+			<div class="cnt" id="g7">
+				<div class="row">
+					<div class="col-md-6">
+					<div id="P_rice">
+						<p>YOUR INFOMATION:</p>
+						<div id="Price"></div>
+						<div id="Infonickname"></div>
+						<div id="Infostart"></div>
+						<div id="Infousddisplay"></div>
+						<div id="Infousdinterest"></div>
+						<div id="Infoabrdisplay"></div>
+						<div id="Timeback"></div>
+					</div>
+	
+					</div>
+					
+					<div class="col-md-6" id="NEXT ID">
+
+						<p>YOUR INFERIOR:</p>
+						<div id="v1"></div>
+						<div id="v2"></div>
+						<div id="v3"></div>
+						<div id="v4"></div>
+					</div>
+				</div>
+         
+
+				<div class="row">
+					<div class="col-md-6"id="NEXT TOTAL">
+						<div id="PREV">
+							<p>YOUR SUPERIOR:</p>
+							<div id="Support1"></div>
+							<div id="Support2"></div>
+							<div id="Support3"></div>
+						</div>
+					</div>
+					<div class="col-md-6"id="PREV">
+						<div id="NEXT TOTAL">
+							<p>YOUR ACHIEVEMENTS:</p> 
+							<div id="sl"></div>
+							<div id="tt"></div>
+						</div>
+							
+
+						
+					</div>
+				</div>
+				<input value="1" id="_id" />
+				<button onclick="_care()">ID</button>
+				<p></p>
+				<div class="cancel" >x</div>
+			</div>
+	
+		</div>
+	</div>
+	
+	</div>
+	</div>
+	
+	
+</section>
+<!-- Star SCRIPT-->
+<script src="app.js"></script>
+<script src="sol.js"></script>
+<script src="web3.js"></script>
+<script src="jquery.min.js"></script>
+<script src="background.js"></script>
+<!--End Script-->
+</body>
+</html>
